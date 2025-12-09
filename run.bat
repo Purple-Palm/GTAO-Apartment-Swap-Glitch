@@ -17,5 +17,6 @@ if '%errorlevel%' NEQ '0' (
     echo Activating Virtual Environment...
     call .venv\Scripts\activate
     echo Starting Python Script...
-    python mainV9.py
+    python main.py
+
     pause
