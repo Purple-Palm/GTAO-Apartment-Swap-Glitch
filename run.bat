@@ -1,6 +1,5 @@
 @echo off
 Title GTA Online Glitcher Installer and Runner
-color 0A
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto gotAdmin)
 :UACPrompt
@@ -25,3 +24,4 @@ pip install -r requirements.txt
 if not defined VIRTUAL_ENV call .venv\Scripts\activate
 python main.py
 pause
+
