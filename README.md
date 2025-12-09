@@ -4,7 +4,7 @@
 
 ## ⚠️ CRITICAL DISCLAIMER
 **I (the creator) was banned (30-day suspension + wipe) after generating $200M in 4 hours.**
-My friend used this exact script for $10M and is safe.
+My friend used this exact script for $20M and is safe.
 **USE AT YOUR OWN RISK.**
 * **Recommended Limit:** 10M-20M per week.
 * **Detection Risk:** High if abused. Low if used conservatively.
