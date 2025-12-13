@@ -1,0 +1,610 @@
+2025-12-13 00:33:04,133 [INFO] [FIREWALL] RESTORING Connection...
+2025-12-13 00:33:04,296 [INFO] [STATS] Loaded: 38 loops, 440 properties
+2025-12-13 00:33:04,296 [INFO] [INIT] Loading assets into RAM...
+2025-12-13 00:33:04,313 [INFO] [INIT] 24 assets cached in memory.
+2025-12-13 00:33:04,314 [INFO] [INIT] All required assets validated.
+2025-12-13 00:33:07,932 [INFO] [START] Skipping first transition (Already Online).
+2025-12-13 00:33:07,934 [INFO] 
+==================== LOOP 1 / 5 ====================
+2025-12-13 00:33:07,936 [INFO] 
+--- PHASE: Batch Buy (10 Slots) ---
+2025-12-13 00:33:11,255 [INFO] [ACTION] Clicking 'web_browser_input_field.png' at (1461, 141) [conf: 1.00]
+2025-12-13 00:33:11,741 [INFO] [WAIT] Waiting for keyboard to appear...
+2025-12-13 00:33:13,241 [INFO] [TYPE] Typing Dynasty8 URL...
+2025-12-13 00:33:13,242 [INFO] [TYPE] Typing: www.dynasty8realestate.com
+2025-12-13 00:33:24,306 [INFO] [WAIT] Waiting for page to load...
+2025-12-13 00:33:26,119 [INFO] [ACTION] Clicking 'web_browser_view_property_listings.png' at (752, 782) [conf: 1.00]
+2025-12-13 00:33:27,833 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:33:28,831 [INFO] [FIREWALL] BLOCKING Connection...
+2025-12-13 00:33:30,087 [INFO]    [SLOT 1/10]
+2025-12-13 00:33:30,345 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (789, 840) [conf: 1.00]
+2025-12-13 00:33:30,824 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:33:31,146 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:34:00,792 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:34:01,749 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:34:02,519 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:34:03,007 [INFO]    [SLOT 2/10]
+2025-12-13 00:34:03,243 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (693, 840) [conf: 1.00]
+2025-12-13 00:34:03,728 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:34:04,047 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:34:23,145 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:34:24,130 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:34:24,928 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:34:25,425 [INFO]    [SLOT 3/10]
+2025-12-13 00:34:26,225 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (717, 840) [conf: 1.00]
+2025-12-13 00:34:26,713 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:34:27,085 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:34:31,290 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:34:32,213 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:34:32,961 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:34:33,439 [INFO]    [SLOT 4/10]
+2025-12-13 00:34:33,697 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (765, 840) [conf: 1.00]
+2025-12-13 00:34:34,190 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:34:34,550 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:34:39,183 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:34:40,166 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:34:40,961 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:34:41,441 [INFO]    [SLOT 5/10]
+2025-12-13 00:34:41,695 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (657, 840) [conf: 1.00]
+2025-12-13 00:34:42,177 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:34:42,440 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:34:47,390 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:34:48,375 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:34:49,177 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:34:49,662 [INFO]    [SLOT 6/10]
+2025-12-13 00:34:49,965 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (679, 840) [conf: 1.00]
+2025-12-13 00:34:50,461 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:34:50,862 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:34:56,229 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:34:57,165 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:34:57,894 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:34:58,377 [INFO]    [SLOT 7/10]
+2025-12-13 00:34:58,646 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (731, 840) [conf: 1.00]
+2025-12-13 00:34:59,140 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:34:59,418 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:35:05,036 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:35:06,023 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:35:06,790 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:35:07,277 [INFO]    [SLOT 8/10]
+2025-12-13 00:35:07,588 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (669, 840) [conf: 1.00]
+2025-12-13 00:35:08,073 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:35:08,428 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:35:14,355 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:35:15,321 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:35:16,055 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:35:16,540 [INFO]    [SLOT 9/10]
+2025-12-13 00:35:16,815 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (729, 840) [conf: 1.00]
+2025-12-13 00:35:17,309 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:35:17,614 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:35:23,886 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:35:24,839 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:35:25,631 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:35:26,128 [INFO]    [SLOT 10/10]
+2025-12-13 00:35:26,378 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (787, 840) [conf: 1.00]
+2025-12-13 00:35:26,877 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:35:27,197 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:35:33,993 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:35:34,944 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:35:35,714 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:35:36,211 [INFO]    [BATCH] Completed: 10/10 properties bought
+2025-12-13 00:35:36,214 [INFO]    [EXIT] Closing browser...
+2025-12-13 00:35:39,571 [DEBUG] [MISS] 'map_north.png' not found (best: 0.52)
+2025-12-13 00:35:45,331 [INFO]    [SUCCESS] Browser Closed.
+2025-12-13 00:35:45,331 [INFO]    [EXIT] Transitioning to Story Mode...
+2025-12-13 00:35:45,334 [INFO] 
+--- STATE CHECK: Transitioning to Story Mode ---
+2025-12-13 00:35:46,833 [INFO]    [WAIT] Probing for Story Mode...
+2025-12-13 00:35:52,099 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:35:54,566 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:35:56,930 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.59)
+2025-12-13 00:36:04,630 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.67)
+2025-12-13 00:36:06,693 [INFO]    [SUCCESS] Story Mode Menu Detected after ESC (attempt 8)
+2025-12-13 00:36:06,693 [INFO] [FIREWALL] RESTORING Connection...
+2025-12-13 00:36:06,906 [INFO] 
+--- TRANSITION: Story -> Online ---
+2025-12-13 00:36:07,214 [DEBUG] Scanning for 'online_button.png' in ALL...
+2025-12-13 00:36:07,405 [INFO] [ACTION] Clicking 'online_button.png' at (2008, 267) [conf: 1.00]
+2025-12-13 00:36:08,388 [INFO]    [NAV] Selecting 'Play GTA Online'...
+2025-12-13 00:36:10,387 [INFO] [ACTION] Clicking 'closed_friend_session.png' at (703, 561) [conf: 0.92]
+2025-12-13 00:36:11,829 [INFO]    [WAIT] Waiting for Online Load...
+2025-12-13 00:36:31,784 [DEBUG]    [STATE] Loading screen detected...
+2025-12-13 00:36:50,027 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:36:50,961 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:36:51,910 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:36:52,868 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:36:53,726 [INFO] 
+   [SUCCESS] Minimap detected! Spawn confirmed.
+2025-12-13 00:36:54,228 [INFO]    [SAVE] Forcing Game Save...
+2025-12-13 00:36:55,388 [INFO] [ACTION] Clicking 'interaction_menu_appearance_entry.png' at (131, 528) [conf: 0.99]
+2025-12-13 00:36:56,700 [INFO] [ACTION] Clicking 'interaction_menu_accessories_entry.png' at (129, 274) [conf: 1.00]
+2025-12-13 00:36:57,983 [INFO] [ACTION] Clicking 'interaction_menu_hats_entry.png' at (82, 324) [conf: 1.00]
+2025-12-13 00:37:00,150 [INFO]    [WAIT] Saving (2.0s)...
+2025-12-13 00:37:02,153 [INFO] 
+[PROGRESS] Loop 1 complete. ETA remaining: 15.6 min
+2025-12-13 00:37:02,154 [INFO] 
+==================== LOOP 2 / 5 ====================
+2025-12-13 00:37:02,155 [INFO] 
+--- PHASE: Batch Buy (10 Slots) ---
+2025-12-13 00:37:05,455 [INFO] [ACTION] Clicking 'web_browser_input_field.png' at (1461, 141) [conf: 1.00]
+2025-12-13 00:37:05,935 [INFO] [WAIT] Waiting for keyboard to appear...
+2025-12-13 00:37:07,436 [INFO] [TYPE] Typing Dynasty8 URL...
+2025-12-13 00:37:07,437 [INFO] [TYPE] Typing: www.dynasty8realestate.com
+2025-12-13 00:37:18,563 [INFO] [WAIT] Waiting for page to load...
+2025-12-13 00:37:20,407 [INFO] [ACTION] Clicking 'web_browser_view_property_listings.png' at (752, 782) [conf: 1.00]
+2025-12-13 00:37:22,014 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:37:23,003 [INFO] [FIREWALL] BLOCKING Connection...
+2025-12-13 00:37:24,266 [INFO]    [SLOT 1/10]
+2025-12-13 00:37:24,467 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (795, 840) [conf: 1.00]
+2025-12-13 00:37:24,957 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:37:25,276 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:37:28,702 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:37:29,598 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:37:30,337 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:37:30,817 [INFO]    [SLOT 2/10]
+2025-12-13 00:37:31,078 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (789, 840) [conf: 1.00]
+2025-12-13 00:37:31,568 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:37:31,870 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:37:35,611 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:37:36,517 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:37:37,306 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:37:37,787 [INFO]    [SLOT 3/10]
+2025-12-13 00:37:38,089 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (693, 840) [conf: 1.00]
+2025-12-13 00:37:38,569 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:37:38,910 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:37:43,106 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:37:44,014 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:37:44,764 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:37:45,252 [INFO]    [SLOT 4/10]
+2025-12-13 00:37:45,499 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (717, 840) [conf: 1.00]
+2025-12-13 00:37:45,987 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:37:46,309 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:37:50,799 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:37:51,749 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:37:52,491 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:37:52,988 [INFO]    [SLOT 5/10]
+2025-12-13 00:37:53,282 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (765, 840) [conf: 1.00]
+2025-12-13 00:37:53,770 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:37:54,080 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:37:58,924 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:37:59,859 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:38:00,663 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:38:01,155 [INFO]    [SLOT 6/10]
+2025-12-13 00:38:01,445 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (657, 840) [conf: 1.00]
+2025-12-13 00:38:01,935 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:38:02,274 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:38:07,434 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:38:08,422 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:38:09,158 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:38:09,651 [INFO]    [SLOT 7/10]
+2025-12-13 00:38:09,940 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (679, 840) [conf: 1.00]
+2025-12-13 00:38:10,434 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:38:10,776 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:38:16,413 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:38:17,399 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:38:18,150 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:38:18,638 [INFO]    [SLOT 8/10]
+2025-12-13 00:38:18,900 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (731, 840) [conf: 1.00]
+2025-12-13 00:38:19,387 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:38:19,702 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:38:25,643 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:38:26,653 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:38:27,397 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:38:27,885 [INFO]    [SLOT 9/10]
+2025-12-13 00:38:28,139 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (669, 840) [conf: 1.00]
+2025-12-13 00:38:28,637 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:38:28,880 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:38:35,236 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:38:36,217 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:38:36,974 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:38:37,468 [INFO]    [SLOT 10/10]
+2025-12-13 00:38:37,791 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (729, 840) [conf: 1.00]
+2025-12-13 00:38:38,288 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:38:38,613 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:38:45,325 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:38:46,298 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:38:47,032 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:38:47,517 [INFO]    [BATCH] Completed: 10/10 properties bought
+2025-12-13 00:38:47,519 [INFO]    [EXIT] Closing browser...
+2025-12-13 00:38:50,882 [DEBUG] [MISS] 'map_north.png' not found (best: 0.52)
+2025-12-13 00:38:56,647 [INFO]    [SUCCESS] Browser Closed.
+2025-12-13 00:38:56,648 [INFO]    [EXIT] Transitioning to Story Mode...
+2025-12-13 00:38:56,650 [INFO] 
+--- STATE CHECK: Transitioning to Story Mode ---
+2025-12-13 00:38:58,184 [INFO]    [WAIT] Probing for Story Mode...
+2025-12-13 00:39:03,041 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.66)
+2025-12-13 00:39:05,725 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:39:08,254 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:39:16,210 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.69)
+2025-12-13 00:39:18,244 [INFO]    [SUCCESS] Story Mode Menu Detected after ESC (attempt 8)
+2025-12-13 00:39:18,244 [INFO] [FIREWALL] RESTORING Connection...
+2025-12-13 00:39:18,438 [INFO] 
+--- TRANSITION: Story -> Online ---
+2025-12-13 00:39:18,746 [DEBUG] Scanning for 'online_button.png' in ALL...
+2025-12-13 00:39:18,919 [INFO] [ACTION] Clicking 'online_button.png' at (2008, 267) [conf: 0.99]
+2025-12-13 00:39:19,893 [INFO]    [NAV] Selecting 'Play GTA Online'...
+2025-12-13 00:39:21,867 [INFO] [ACTION] Clicking 'closed_friend_session.png' at (703, 561) [conf: 1.00]
+2025-12-13 00:39:23,284 [INFO]    [WAIT] Waiting for Online Load...
+2025-12-13 00:39:29,181 [DEBUG]    [STATE] Loading screen detected...
+2025-12-13 00:39:46,579 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:39:47,507 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:39:48,471 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:39:49,411 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:39:50,355 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:39:51,221 [INFO] 
+   [SUCCESS] Minimap detected! Spawn confirmed.
+2025-12-13 00:39:51,722 [INFO]    [SAVE] Forcing Game Save...
+2025-12-13 00:39:52,858 [INFO] [ACTION] Clicking 'interaction_menu_appearance_entry.png' at (131, 528) [conf: 0.98]
+2025-12-13 00:39:54,161 [INFO] [ACTION] Clicking 'interaction_menu_accessories_entry.png' at (129, 274) [conf: 1.00]
+2025-12-13 00:39:55,416 [INFO] [ACTION] Clicking 'interaction_menu_hats_entry.png' at (82, 324) [conf: 1.00]
+2025-12-13 00:39:57,570 [INFO]    [WAIT] Saving (2.0s)...
+2025-12-13 00:39:59,573 [INFO] 
+[PROGRESS] Loop 2 complete. ETA remaining: 10.3 min
+2025-12-13 00:39:59,574 [INFO] 
+==================== LOOP 3 / 5 ====================
+2025-12-13 00:39:59,576 [INFO] 
+--- PHASE: Batch Buy (10 Slots) ---
+2025-12-13 00:40:02,969 [INFO] [ACTION] Clicking 'web_browser_input_field.png' at (1461, 141) [conf: 1.00]
+2025-12-13 00:40:03,448 [INFO] [WAIT] Waiting for keyboard to appear...
+2025-12-13 00:40:04,949 [INFO] [TYPE] Typing Dynasty8 URL...
+2025-12-13 00:40:04,950 [INFO] [TYPE] Typing: www.dynasty8realestate.com
+2025-12-13 00:40:16,041 [INFO] [WAIT] Waiting for page to load...
+2025-12-13 00:40:17,801 [INFO] [ACTION] Clicking 'web_browser_view_property_listings.png' at (752, 782) [conf: 1.00]
+2025-12-13 00:40:19,390 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:40:20,381 [INFO] [FIREWALL] BLOCKING Connection...
+2025-12-13 00:40:21,617 [INFO]    [SLOT 1/10]
+2025-12-13 00:40:21,888 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (787, 840) [conf: 1.00]
+2025-12-13 00:40:22,379 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:40:22,727 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:40:26,195 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:40:27,146 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:40:27,923 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:40:28,416 [INFO]    [SLOT 2/10]
+2025-12-13 00:40:28,640 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (795, 840) [conf: 1.00]
+2025-12-13 00:40:29,132 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:40:29,427 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:40:33,235 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:40:34,176 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:40:34,904 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:40:35,397 [INFO]    [SLOT 3/10]
+2025-12-13 00:40:35,663 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (789, 840) [conf: 1.00]
+2025-12-13 00:40:36,149 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:40:36,502 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:40:40,853 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:40:41,842 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:40:42,594 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:40:43,078 [INFO]    [SLOT 4/10]
+2025-12-13 00:40:43,300 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (693, 840) [conf: 1.00]
+2025-12-13 00:40:43,779 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:40:44,049 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:40:48,518 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:40:49,468 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:40:50,222 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:40:50,714 [INFO]    [SLOT 5/10]
+2025-12-13 00:40:51,015 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (717, 840) [conf: 1.00]
+2025-12-13 00:40:51,496 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:40:51,738 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:40:56,626 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:40:57,656 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:40:58,450 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:40:58,949 [INFO]    [SLOT 6/10]
+2025-12-13 00:40:59,902 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (765, 840) [conf: 1.00]
+2025-12-13 00:41:00,396 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:41:00,734 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:41:06,110 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:41:07,061 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:41:07,861 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:41:08,346 [INFO]    [SLOT 7/10]
+2025-12-13 00:41:08,643 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (657, 840) [conf: 1.00]
+2025-12-13 00:41:09,128 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:41:09,467 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:41:15,013 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:41:15,937 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:41:16,721 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:41:17,212 [INFO]    [SLOT 8/10]
+2025-12-13 00:41:17,553 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (679, 840) [conf: 1.00]
+2025-12-13 00:41:18,050 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:41:18,377 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:41:26,253 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:41:27,219 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:41:28,004 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:41:28,497 [INFO]    [SLOT 9/10]
+2025-12-13 00:41:28,795 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (731, 840) [conf: 1.00]
+2025-12-13 00:41:29,281 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:41:29,632 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:41:35,994 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:41:36,966 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:41:37,757 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:41:38,247 [INFO]    [SLOT 10/10]
+2025-12-13 00:41:38,530 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (669, 840) [conf: 1.00]
+2025-12-13 00:41:39,012 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:41:39,331 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:41:45,985 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:41:46,922 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:41:47,638 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:41:48,123 [INFO]    [BATCH] Completed: 10/10 properties bought
+2025-12-13 00:41:48,124 [INFO]    [EXIT] Closing browser...
+2025-12-13 00:41:51,499 [DEBUG] [MISS] 'map_north.png' not found (best: 0.52)
+2025-12-13 00:41:57,291 [INFO]    [SUCCESS] Browser Closed.
+2025-12-13 00:41:57,292 [INFO]    [EXIT] Transitioning to Story Mode...
+2025-12-13 00:41:57,293 [INFO] 
+--- STATE CHECK: Transitioning to Story Mode ---
+2025-12-13 00:41:58,790 [INFO]    [WAIT] Probing for Story Mode...
+2025-12-13 00:42:03,932 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:42:06,343 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:42:08,757 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.69)
+2025-12-13 00:42:16,424 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.63)
+2025-12-13 00:42:18,752 [INFO]    [SUCCESS] Story Mode Menu Detected after ESC (attempt 8)
+2025-12-13 00:42:18,752 [INFO] [FIREWALL] RESTORING Connection...
+2025-12-13 00:42:18,922 [INFO] 
+--- TRANSITION: Story -> Online ---
+2025-12-13 00:42:19,211 [DEBUG] Scanning for 'online_button.png' in ALL...
+2025-12-13 00:42:19,411 [INFO] [ACTION] Clicking 'online_button.png' at (2008, 267) [conf: 1.00]
+2025-12-13 00:42:20,390 [INFO]    [NAV] Selecting 'Play GTA Online'...
+2025-12-13 00:42:27,281 [WARNING] [WARN] 'Closed Friend Session' not found (attempt 1/3)
+2025-12-13 00:42:29,577 [INFO] 
+--- TRANSITION: Story -> Online ---
+2025-12-13 00:42:30,645 [INFO]    [NAV] Opening Pause Menu...
+2025-12-13 00:42:31,963 [DEBUG] Scanning for 'online_button.png' in ALL...
+2025-12-13 00:42:32,214 [INFO] [ACTION] Clicking 'online_button.png' at (2008, 267) [conf: 1.00]
+2025-12-13 00:42:33,188 [INFO]    [NAV] Selecting 'Play GTA Online'...
+2025-12-13 00:42:35,107 [INFO] [ACTION] Clicking 'closed_friend_session.png' at (703, 561) [conf: 0.94]
+2025-12-13 00:42:36,548 [INFO]    [WAIT] Waiting for Online Load...
+2025-12-13 00:42:43,207 [DEBUG]    [STATE] Loading screen detected...
+2025-12-13 00:42:59,859 [DEBUG] [MISS] 'map_north.png' not found (best: 0.51)
+2025-12-13 00:43:00,795 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:43:01,725 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:43:02,652 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:43:03,617 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:43:04,477 [INFO] 
+   [SUCCESS] Minimap detected! Spawn confirmed.
+2025-12-13 00:43:04,978 [INFO]    [SAVE] Forcing Game Save...
+2025-12-13 00:43:06,091 [INFO] [ACTION] Clicking 'interaction_menu_appearance_entry.png' at (131, 528) [conf: 0.99]
+2025-12-13 00:43:07,298 [INFO] [ACTION] Clicking 'interaction_menu_accessories_entry.png' at (129, 274) [conf: 1.00]
+2025-12-13 00:43:08,573 [INFO] [ACTION] Clicking 'interaction_menu_hats_entry.png' at (82, 324) [conf: 1.00]
+2025-12-13 00:43:10,742 [INFO]    [WAIT] Saving (2.0s)...
+2025-12-13 00:43:12,745 [INFO] 
+[PROGRESS] Loop 3 complete. ETA remaining: 6.7 min
+2025-12-13 00:43:12,746 [INFO] 
+==================== LOOP 4 / 5 ====================
+2025-12-13 00:43:12,747 [INFO] 
+--- PHASE: Batch Buy (10 Slots) ---
+2025-12-13 00:43:16,058 [INFO] [ACTION] Clicking 'web_browser_input_field.png' at (1461, 141) [conf: 1.00]
+2025-12-13 00:43:16,540 [INFO] [WAIT] Waiting for keyboard to appear...
+2025-12-13 00:43:18,041 [INFO] [TYPE] Typing Dynasty8 URL...
+2025-12-13 00:43:18,042 [INFO] [TYPE] Typing: www.dynasty8realestate.com
+2025-12-13 00:43:29,169 [INFO] [WAIT] Waiting for page to load...
+2025-12-13 00:43:31,006 [INFO] [ACTION] Clicking 'web_browser_view_property_listings.png' at (752, 782) [conf: 1.00]
+2025-12-13 00:43:32,607 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:43:33,589 [INFO] [FIREWALL] BLOCKING Connection...
+2025-12-13 00:43:34,820 [INFO]    [SLOT 1/10]
+2025-12-13 00:43:35,078 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (729, 840) [conf: 1.00]
+2025-12-13 00:43:35,576 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:43:35,925 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:43:39,382 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:43:40,339 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:43:41,132 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:43:41,623 [INFO]    [SLOT 2/10]
+2025-12-13 00:43:41,872 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (787, 840) [conf: 1.00]
+2025-12-13 00:43:42,355 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:43:42,658 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:43:46,394 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:43:47,298 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:43:48,042 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:43:48,520 [INFO]    [SLOT 3/10]
+2025-12-13 00:43:48,805 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (795, 840) [conf: 1.00]
+2025-12-13 00:43:49,288 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:43:49,610 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:43:53,854 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:43:54,762 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:43:55,510 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:43:55,987 [INFO]    [SLOT 4/10]
+2025-12-13 00:43:56,285 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (789, 840) [conf: 1.00]
+2025-12-13 00:43:56,775 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:43:57,126 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:01,477 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:02,431 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:03,160 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:03,638 [INFO]    [SLOT 5/10]
+2025-12-13 00:44:03,922 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (693, 840) [conf: 1.00]
+2025-12-13 00:44:04,408 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:44:04,683 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:09,720 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:10,707 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:11,494 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:11,991 [INFO]    [SLOT 6/10]
+2025-12-13 00:44:12,284 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (717, 840) [conf: 1.00]
+2025-12-13 00:44:12,772 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:44:13,103 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:18,411 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:19,363 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:20,118 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:20,600 [INFO]    [SLOT 7/10]
+2025-12-13 00:44:20,917 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (765, 840) [conf: 1.00]
+2025-12-13 00:44:21,406 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:44:21,687 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:27,299 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:28,250 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:29,014 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:29,507 [INFO]    [SLOT 8/10]
+2025-12-13 00:44:29,781 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (657, 840) [conf: 1.00]
+2025-12-13 00:44:30,275 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:44:30,593 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:36,593 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:37,546 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:38,322 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:38,805 [INFO]    [SLOT 9/10]
+2025-12-13 00:44:39,080 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (679, 840) [conf: 1.00]
+2025-12-13 00:44:39,575 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:44:39,902 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:46,210 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:47,188 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:47,960 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:48,455 [INFO]    [SLOT 10/10]
+2025-12-13 00:44:48,708 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (731, 840) [conf: 1.00]
+2025-12-13 00:44:49,188 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:44:49,518 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:44:56,317 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:44:57,333 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:44:58,084 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:44:58,569 [INFO]    [BATCH] Completed: 10/10 properties bought
+2025-12-13 00:44:58,569 [INFO]    [EXIT] Closing browser...
+2025-12-13 00:45:01,901 [DEBUG] [MISS] 'map_north.png' not found (best: 0.52)
+2025-12-13 00:45:07,658 [INFO]    [SUCCESS] Browser Closed.
+2025-12-13 00:45:07,659 [INFO]    [EXIT] Transitioning to Story Mode...
+2025-12-13 00:45:07,661 [INFO] 
+--- STATE CHECK: Transitioning to Story Mode ---
+2025-12-13 00:45:09,152 [INFO]    [WAIT] Probing for Story Mode...
+2025-12-13 00:45:14,301 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.68)
+2025-12-13 00:45:16,872 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:45:19,358 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.65)
+2025-12-13 00:45:26,937 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.63)
+2025-12-13 00:45:29,142 [INFO]    [SUCCESS] Story Mode Menu Detected after ESC (attempt 8)
+2025-12-13 00:45:29,142 [INFO] [FIREWALL] RESTORING Connection...
+2025-12-13 00:45:29,283 [INFO] 
+--- TRANSITION: Story -> Online ---
+2025-12-13 00:45:29,574 [DEBUG] Scanning for 'online_button.png' in ALL...
+2025-12-13 00:45:29,771 [INFO] [ACTION] Clicking 'online_button.png' at (2008, 267) [conf: 1.00]
+2025-12-13 00:45:30,750 [INFO]    [NAV] Selecting 'Play GTA Online'...
+2025-12-13 00:45:32,747 [INFO] [ACTION] Clicking 'closed_friend_session.png' at (703, 561) [conf: 0.92]
+2025-12-13 00:45:34,193 [INFO]    [WAIT] Waiting for Online Load...
+2025-12-13 00:45:40,093 [DEBUG]    [STATE] Loading screen detected...
+2025-12-13 00:45:58,405 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:45:59,338 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:46:00,308 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:46:01,244 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:46:02,284 [INFO] 
+   [SUCCESS] Minimap detected! Spawn confirmed.
+2025-12-13 00:46:02,786 [INFO]    [SAVE] Forcing Game Save...
+2025-12-13 00:46:03,904 [INFO] [ACTION] Clicking 'interaction_menu_appearance_entry.png' at (131, 528) [conf: 0.98]
+2025-12-13 00:46:05,138 [INFO] [ACTION] Clicking 'interaction_menu_accessories_entry.png' at (129, 274) [conf: 1.00]
+2025-12-13 00:46:06,390 [INFO] [ACTION] Clicking 'interaction_menu_hats_entry.png' at (82, 324) [conf: 1.00]
+2025-12-13 00:46:08,546 [INFO]    [WAIT] Saving (2.0s)...
+2025-12-13 00:46:10,550 [INFO] 
+[PROGRESS] Loop 4 complete. ETA remaining: 3.3 min
+2025-12-13 00:46:10,551 [INFO] 
+==================== LOOP 5 / 5 ====================
+2025-12-13 00:46:10,553 [INFO] 
+--- PHASE: Batch Buy (10 Slots) ---
+2025-12-13 00:46:13,960 [INFO] [ACTION] Clicking 'web_browser_input_field.png' at (1461, 141) [conf: 1.00]
+2025-12-13 00:46:14,449 [INFO] [WAIT] Waiting for keyboard to appear...
+2025-12-13 00:46:15,950 [INFO] [TYPE] Typing Dynasty8 URL...
+2025-12-13 00:46:15,952 [INFO] [TYPE] Typing: www.dynasty8realestate.com
+2025-12-13 00:46:27,020 [INFO] [WAIT] Waiting for page to load...
+2025-12-13 00:46:28,811 [INFO] [ACTION] Clicking 'web_browser_view_property_listings.png' at (752, 782) [conf: 1.00]
+2025-12-13 00:46:30,454 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:46:31,435 [INFO] [FIREWALL] BLOCKING Connection...
+2025-12-13 00:46:32,667 [INFO]    [SLOT 1/10]
+2025-12-13 00:46:32,953 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (669, 840) [conf: 1.00]
+2025-12-13 00:46:33,434 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:46:33,678 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:46:37,239 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:46:38,183 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:46:38,912 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:46:39,405 [INFO]    [SLOT 2/10]
+2025-12-13 00:46:39,694 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (729, 840) [conf: 1.00]
+2025-12-13 00:46:40,184 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:46:40,526 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:46:44,367 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:46:45,327 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:46:46,100 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:46:46,584 [INFO]    [SLOT 3/10]
+2025-12-13 00:46:46,839 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (787, 840) [conf: 1.00]
+2025-12-13 00:46:47,315 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:46:47,602 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:46:51,778 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:46:52,754 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:46:53,447 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:46:53,936 [INFO]    [SLOT 4/10]
+2025-12-13 00:46:54,257 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (795, 840) [conf: 1.00]
+2025-12-13 00:46:54,753 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:46:55,049 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:46:59,573 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:00,511 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:01,324 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:01,820 [INFO]    [SLOT 5/10]
+2025-12-13 00:47:02,069 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (789, 840) [conf: 1.00]
+2025-12-13 00:47:02,554 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:47:02,916 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:47:07,799 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:08,807 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:09,600 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:10,086 [INFO]    [SLOT 6/10]
+2025-12-13 00:47:10,987 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (693, 840) [conf: 1.00]
+2025-12-13 00:47:11,463 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:47:11,786 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:47:17,163 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:18,122 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:18,896 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:19,387 [INFO]    [SLOT 7/10]
+2025-12-13 00:47:19,691 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (717, 840) [conf: 1.00]
+2025-12-13 00:47:20,183 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:47:20,513 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:47:25,898 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:26,831 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:27,578 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:28,061 [INFO]    [SLOT 8/10]
+2025-12-13 00:47:28,322 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (765, 840) [conf: 1.00]
+2025-12-13 00:47:28,817 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:47:29,117 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:47:35,125 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:36,055 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:36,860 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:37,349 [INFO]    [SLOT 9/10]
+2025-12-13 00:47:37,621 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (657, 840) [conf: 1.00]
+2025-12-13 00:47:38,097 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:47:38,447 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:47:44,769 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:45,713 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:46,476 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:46,968 [INFO]    [SLOT 10/10]
+2025-12-13 00:47:47,263 [INFO] [ACTION] Clicking 'web_dynasty_car_icon_black.png' at (679, 840) [conf: 1.00]
+2025-12-13 00:47:47,746 [DEBUG] Scanning for 'web_dynasty_buy_property.png' in BROWSER_MAIN...
+2025-12-13 00:47:48,105 [INFO] [ACTION] Clicking 'web_dynasty_buy_property.png' at (1868, 1056) [conf: 1.00]
+2025-12-13 00:47:54,947 [INFO] [ACTION] Clicking 'web_dynasty_return_to_map.png' at (1226, 1129) [conf: 1.00]
+2025-12-13 00:47:55,939 [INFO] [ACTION] Clicking 'web_dynasty_high_to_low.png' at (755, 441) [conf: 1.00]
+2025-12-13 00:47:56,680 [INFO] [ACTION] Clicking 'web_dynasty_low_to_high.png' at (574, 441) [conf: 1.00]
+2025-12-13 00:47:57,164 [INFO]    [BATCH] Completed: 10/10 properties bought
+2025-12-13 00:47:57,166 [INFO]    [EXIT] Closing browser...
+2025-12-13 00:48:00,497 [DEBUG] [MISS] 'map_north.png' not found (best: 0.52)
+2025-12-13 00:48:06,298 [INFO]    [SUCCESS] Browser Closed.
+2025-12-13 00:48:06,299 [INFO]    [EXIT] Transitioning to Story Mode...
+2025-12-13 00:48:06,301 [INFO] 
+--- STATE CHECK: Transitioning to Story Mode ---
+2025-12-13 00:48:07,760 [INFO]    [WAIT] Probing for Story Mode...
+2025-12-13 00:48:12,978 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:48:15,617 [DEBUG] [MISS] 'first_letter_of_quit_screen.png' not found (best: 0.55)
+2025-12-13 00:48:25,768 [INFO]    [SUCCESS] Story Mode Menu Detected after ESC (attempt 7)
+2025-12-13 00:48:25,769 [INFO] [FIREWALL] RESTORING Connection...
+2025-12-13 00:48:26,016 [INFO] 
+--- TRANSITION: Story -> Online ---
+2025-12-13 00:48:26,350 [DEBUG] Scanning for 'online_button.png' in ALL...
+2025-12-13 00:48:26,530 [INFO] [ACTION] Clicking 'online_button.png' at (2008, 267) [conf: 0.97]
+2025-12-13 00:48:27,509 [INFO]    [NAV] Selecting 'Play GTA Online'...
+2025-12-13 00:48:29,482 [INFO] [ACTION] Clicking 'closed_friend_session.png' at (703, 561) [conf: 0.96]
+2025-12-13 00:48:30,893 [INFO]    [WAIT] Waiting for Online Load...
+2025-12-13 00:48:36,796 [DEBUG]    [STATE] Loading screen detected...
+2025-12-13 00:48:54,109 [DEBUG] [MISS] 'map_north.png' not found (best: 0.52)
+2025-12-13 00:48:55,046 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:48:55,993 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:48:56,965 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:48:57,930 [DEBUG] [MISS] 'map_north.png' not found (best: 0.62)
+2025-12-13 00:48:58,787 [INFO] 
+   [SUCCESS] Minimap detected! Spawn confirmed.
+2025-12-13 00:48:59,288 [INFO]    [SAVE] Forcing Game Save...
+2025-12-13 00:49:00,399 [INFO] [ACTION] Clicking 'interaction_menu_appearance_entry.png' at (131, 528) [conf: 0.98]
+2025-12-13 00:49:01,619 [INFO] [ACTION] Clicking 'interaction_menu_accessories_entry.png' at (129, 274) [conf: 1.00]
+2025-12-13 00:49:02,830 [INFO] [ACTION] Clicking 'interaction_menu_hats_entry.png' at (82, 324) [conf: 1.00]
+2025-12-13 00:49:05,000 [INFO]    [WAIT] Saving (2.0s)...
+2025-12-13 00:49:07,002 [INFO] 
+[PROGRESS] Loop 5 complete. ETA remaining: 0.0 min
+2025-12-13 00:49:07,003 [INFO] 
+==================================================
+2025-12-13 00:49:07,005 [INFO]                SESSION COMPLETE
+2025-12-13 00:49:07,006 [INFO] ==================================================
+2025-12-13 00:49:07,006 [INFO]   Loops Completed: 5
+2025-12-13 00:49:07,006 [INFO]   Total Time: 16.0 minutes
+2025-12-13 00:49:07,007 [INFO]   Avg per Loop: 3.2 minutes
+2025-12-13 00:49:07,008 [INFO]   Total Properties (All Time): 490
+2025-12-13 00:49:07,008 [INFO] ==================================================
+2025-12-13 00:49:07,009 [INFO] [EXIT] Cleaning up...
+2025-12-13 00:49:07,010 [INFO] [FIREWALL] RESTORING Connection...
