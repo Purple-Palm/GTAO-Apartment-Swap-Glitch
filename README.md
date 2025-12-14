@@ -1,6 +1,6 @@
 # GTA Online Apartment Trade-In Automation (Python / OCR)
 
-**V9 - Automated No-Save Method**
+**V13 - Automated No-Save Method**
 
 ## ⚠️ CRITICAL DISCLAIMER
 **I (the creator) was banned (30-day suspension + wipe) after generating $200M in 4 hours.**
