@@ -1,6 +1,6 @@
 """
 GTA Online Apartment Swap Glitch Automation
-Version: 10.0
+Version: 10.0 (English / QWERTY Standard)
 """
 
 import cv2
@@ -26,7 +26,7 @@ from enum import Enum, auto
 
 @dataclass
 class Config:
-    """Configuration centralisée du script"""
+    """Centralized script configuration"""
     CONFIDENCE: float = 0.8
     BLOCKED_IPS: str = "192.81.241.170-192.81.241.171"
     RULE_NAME: str = "GTAOSAVEBLOCK"
@@ -53,7 +53,7 @@ class Config:
 
 
 class GameState(Enum):
-    """États possibles du jeu"""
+    """Possible game states"""
     UNKNOWN = auto()
     STORY_MODE = auto()
     ONLINE = auto()
@@ -82,7 +82,7 @@ STATS = {
 # ==================== LOGGING ====================
 
 def setup_logging():
-    """Configure le système de logging"""
+    """Configures the logging system"""
     CONFIG.DEBUG_DIR.mkdir(exist_ok=True)
     
     logging.basicConfig(
@@ -110,7 +110,7 @@ def log_warning(msg: str):
 # ==================== STATS MANAGEMENT ====================
 
 def load_stats():
-    """Charge les statistiques depuis le fichier"""
+    """Loads statistics from file"""
     global STATS
     if CONFIG.STATS_FILE.exists():
         try:
@@ -122,7 +122,7 @@ def load_stats():
             log_warning(f"[STATS] Could not load stats: {e}")
 
 def save_stats():
-    """Sauvegarde les statistiques"""
+    """Saves statistics to file"""
     STATS["last_run"] = datetime.now().isoformat()
     try:
         with open(CONFIG.STATS_FILE, 'w') as f:
@@ -131,7 +131,7 @@ def save_stats():
         log_warning(f"[STATS] Could not save stats: {e}")
 
 def update_stats(loops: int = 0, properties: int = 0, errors: int = 0):
-    """Met à jour les statistiques"""
+    """Updates internal statistics"""
     STATS["total_loops_completed"] += loops
     STATS["total_properties_bought"] += properties
     STATS["errors_recovered"] += errors
@@ -141,11 +141,11 @@ def update_stats(loops: int = 0, properties: int = 0, errors: int = 0):
 # ==================== SCREEN & ROI ====================
 
 def get_screen_resolution() -> Tuple[int, int]:
-    """Récupère la résolution de l'écran"""
+    """Retrieves screen resolution"""
     return pyautogui.size()
 
 def calculate_rois(w: int, h: int) -> Dict[str, dict]:
-    """Calcule les régions d'intérêt basées sur la résolution"""
+    """Calculates Regions of Interest based on resolution"""
     return {
         "ALL": {"top": 0, "left": 0, "width": w, "height": h},
         "BROWSER_MAIN": {"top": 0, "left": 0, "width": w, "height": h},
@@ -159,7 +159,7 @@ def calculate_rois(w: int, h: int) -> Dict[str, dict]:
 # ==================== ASSET MANAGEMENT ====================
 
 def load_assets_into_ram() -> bool:
-    """Charge tous les assets PNG en mémoire"""
+    """Loads all PNG assets into memory"""
     log("[INIT] Loading assets into RAM...")
     
     if not CONFIG.ASSETS_DIR.exists():
@@ -186,7 +186,7 @@ def load_assets_into_ram() -> bool:
     return loaded_count > 0
 
 def validate_required_assets() -> bool:
-    """Vérifie que tous les assets requis sont chargés"""
+    """Verifies that all required assets are loaded"""
     required = [
         "pause_menu_text_grand_theft_auto_v.png",
         "online_button.png",
@@ -215,13 +215,13 @@ def validate_required_assets() -> bool:
 # ==================== FIREWALL MANAGEMENT ====================
 
 class FirewallManager:
-    """Gère les règles de pare-feu"""
+    """Manages firewall rules"""
     
     _is_blocked: bool = False
     
     @classmethod
     def block(cls) -> bool:
-        """Bloque la connexion aux serveurs Rockstar"""
+        """Blocks connection to Rockstar servers"""
         if cls._is_blocked:
             log_debug("[FIREWALL] Already blocked.")
             return True
@@ -239,7 +239,7 @@ class FirewallManager:
     
     @classmethod
     def unblock(cls) -> bool:
-        """Restaure la connexion"""
+        """Restores connection"""
         log("[FIREWALL] RESTORING Connection...")
         cmd = f'netsh advfirewall firewall delete rule name="{CONFIG.RULE_NAME}"'
         result = subprocess.run(cmd, shell=True, capture_output=True)
@@ -252,7 +252,7 @@ class FirewallManager:
 
 
 def clean_exit():
-    """Nettoyage à la sortie du script"""
+    """Cleanup on script exit"""
     log("[EXIT] Cleaning up...")
     FirewallManager.unblock()
     save_stats()
@@ -263,7 +263,7 @@ atexit.register(clean_exit)
 # ==================== INPUT HELPERS ====================
 
 def check_panic_key() -> bool:
-    """Vérifie si la touche de panique est pressée"""
+    """Checks if the panic key is pressed"""
     if keyboard.is_pressed(CONFIG.PANIC_KEY):
         log(f"\n[PANIC] '{CONFIG.PANIC_KEY.upper()}' Pressed. Emergency Exit!")
         FirewallManager.unblock()
@@ -272,7 +272,7 @@ def check_panic_key() -> bool:
     return False
 
 def fast_press(key: str, count: int = 1, delay_between: float = 0.05):
-    """Appuie rapidement sur une touche plusieurs fois"""
+    """Presses a key rapidly multiple times"""
     for _ in range(count):
         check_panic_key()
         pydirectinput.keyDown(key)
@@ -283,7 +283,7 @@ def fast_press(key: str, count: int = 1, delay_between: float = 0.05):
             time.sleep(delay_between)
 
 def safe_click(x: int, y: int):
-    """Click sécurisé avec vérification"""
+    """Safe click with checks"""
     check_panic_key()
     pydirectinput.moveTo(x, y)
     pydirectinput.mouseDown()
@@ -292,73 +292,30 @@ def safe_click(x: int, y: int):
 
 def safe_type(text: str, delay: float = 0.05):
     """
-    Tape du texte caractère par caractère avec pydirectinput.
-    Utilise un mapping AZERTY pour corriger les touches.
+    Types text character by character using pydirectinput.
+    Uses standard QWERTY layout.
     """
     check_panic_key()
     log(f"[TYPE] Typing: {text}")
     
-    # Mapping QWERTY → AZERTY
-    # Pour taper le caractère de gauche, on appuie sur la touche de droite
-    # Car pydirectinput envoie la position physique QWERTY
-    qwerty_to_azerty = {
-        'a': 'q',  # Pour taper 'a', appuyer sur 'q' (position AZERTY de 'a')
-        'q': 'a',  # Pour taper 'q', appuyer sur 'a'
-        'z': 'w',  # Pour taper 'z', appuyer sur 'w'
-        'w': 'z',  # Pour taper 'w', appuyer sur 'z'
-        'm': ';',  # Pour taper 'm', appuyer sur ';' (dépend du layout exact)
-        '.': ':',  # Point sur AZERTY = Shift+; ou touche dédiée
-        ',': 'm',  # Virgule
-    }
-    
-    # Caractères spéciaux
-    special_keys = {
-        '.': ';',      # Le point est sur la touche ; en AZERTY (shift+,)
-        '/': '/',      # Slash (peut varier)
-        '-': '-',
-        ' ': 'space',
-        '0': '0', '1': '1', '2': '2', '3': '3', '4': '4',
-        '5': '5', '6': '6', '7': '7', '8': '8', '9': '9',
-    }
-    
     for char in text:
         check_panic_key()
-        lower_char = char.lower()
         
-        # Déterminer quelle touche appuyer
-        if lower_char in qwerty_to_azerty:
-            key_to_press = qwerty_to_azerty[lower_char]
-        elif char in special_keys:
-            key_to_press = special_keys[char]
-        else:
-            key_to_press = lower_char
-        
-        # Gérer les majuscules
         if char.isupper():
             pydirectinput.keyDown('shift')
             time.sleep(0.02)
-            pydirectinput.press(key_to_press)
+            pydirectinput.press(char.lower())
             time.sleep(0.02)
             pydirectinput.keyUp('shift')
-        elif key_to_press == 'space':
-            pydirectinput.press('space')
-        elif char == '.':
-            # Point en AZERTY = Shift + , (virgule)
-            # La touche virgule QWERTY correspond à la bonne position
+        elif char in ['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '"', '<', '>', '?']:
+             # Handle standard special chars that need shift on US QWERTY
             pydirectinput.keyDown('shift')
             time.sleep(0.02)
-            pydirectinput.press(',')
-            time.sleep(0.02)
-            pydirectinput.keyUp('shift')
-        elif char.isdigit():
-            # En AZERTY, les chiffres nécessitent Shift
-            pydirectinput.keyDown('shift')
-            time.sleep(0.02)
-            pydirectinput.press(char)
+            pydirectinput.press(char) # pydirectinput often maps the key, but pressing explicit keys is safer if known
             time.sleep(0.02)
             pydirectinput.keyUp('shift')
         else:
-            pydirectinput.press(key_to_press)
+            pydirectinput.press(char)
         
         time.sleep(delay)
     
@@ -377,19 +334,19 @@ def find_image(
     log_search: bool = True
 ) -> bool:
     """
-    Recherche une image sur l'écran avec correspondance de template.
+    Searches for an image on screen using template matching.
     
     Args:
-        image_name: Nom du fichier image dans le cache
-        region_name: Région de l'écran à scanner
-        timeout: Temps maximum de recherche
-        click: Cliquer sur l'image si trouvée
-        wait_after: Délai après action
-        crash_if_missing: Quitter si l'image n'est pas trouvée
-        log_search: Logger la recherche
+        image_name: Filename of the asset in cache
+        region_name: Screen region to scan
+        timeout: Max search time
+        click: Click the image if found
+        wait_after: Delay after action
+        crash_if_missing: Exit script if not found
+        log_search: Log the search attempt
     
     Returns:
-        True si l'image est trouvée, False sinon
+        True if found, False otherwise
     """
     start = time.time()
     template = ASSET_CACHE.get(image_name)
@@ -400,7 +357,7 @@ def find_image(
             sys.exit(1)
         return False
 
-    # Initialiser les ROIs si nécessaire
+    # Initialize ROIs if necessary
     w, h = get_screen_resolution()
     ROIS = calculate_rois(w, h)
     region = ROIS.get(region_name, ROIS["ALL"])
@@ -441,7 +398,7 @@ def find_image(
             
         time.sleep(CONFIG.SCAN_INTERVAL)
     
-    # Timeout atteint
+    # Timeout reached
     if crash_if_missing:
         dump_failure_screenshot(image_name, region)
         log_error(f"[CRITICAL] '{image_name}' not found after {timeout}s (best: {best_val_seen:.2f})")
@@ -454,7 +411,7 @@ def find_image(
     return False
 
 def dump_failure_screenshot(image_name: str, region: dict):
-    """Sauvegarde une capture d'écran en cas d'échec"""
+    """Saves a screenshot on failure"""
     timestamp = datetime.now().strftime("%H-%M-%S")
     err_filename = CONFIG.DEBUG_DIR / f"FAIL_{image_name}_{timestamp}.png"
     
@@ -469,21 +426,21 @@ def dump_failure_screenshot(image_name: str, region: dict):
 # ==================== GAME STATE DETECTION ====================
 
 def detect_game_state() -> GameState:
-    """Détecte l'état actuel du jeu"""
+    """Detects current game state"""
     
-    # Vérifier si en Story Mode (menu pause)
+    # Check if in Story Mode (pause menu)
     if find_image("pause_menu_text_grand_theft_auto_v.png", timeout=0.3, log_search=False):
         return GameState.STORY_MODE
     
-    # Vérifier si online (minimap visible)
+    # Check if online (minimap visible)
     if find_image("map_north.png", region_name="HUD_AREA", timeout=0.3, log_search=False):
         return GameState.ONLINE
     
-    # Vérifier si navigateur ouvert
+    # Check if browser open
     if find_image("eyefind_logo.png", timeout=0.3, log_search=False):
         return GameState.BROWSER_OPEN
     
-    # Vérifier si en chargement
+    # Check if loading
     if find_image("joining_gta_online.png", region_name="BOTTOM_RIGHT", timeout=0.3, log_search=False):
         return GameState.LOADING
     
@@ -493,7 +450,7 @@ def detect_game_state() -> GameState:
 # ==================== GAME TRANSITIONS ====================
 
 def confirm_story_mode_spawn() -> bool:
-    """Confirme que le jeu est bien en mode Histoire"""
+    """Confirms the game is in Story Mode"""
     log("   [WAIT] Probing for Story Mode...")
     
     start_time = time.time()
@@ -503,21 +460,21 @@ def confirm_story_mode_spawn() -> bool:
         check_panic_key()
         attempts += 1
         
-        # Vérifier si déjà dans le menu
+        # Check if already in menu
         if find_image("pause_menu_text_grand_theft_auto_v.png", timeout=0.2, log_search=False):
             log(f"   [SUCCESS] Story Mode Menu Detected (attempt {attempts})")
             return True
 
-        # Appuyer sur ESC pour ouvrir le menu
+        # Press ESC to open menu
         pydirectinput.press('esc')
         time.sleep(1.2)
         
-        # Revérifier
+        # Re-check
         if find_image("pause_menu_text_grand_theft_auto_v.png", timeout=0.3, log_search=False):
             log(f"   [SUCCESS] Story Mode Menu Detected after ESC (attempt {attempts})")
             return True
         
-        # Gérer l'écran de confirmation de quitter
+        # Handle Quit Screen confirmation
         if find_image("first_letter_of_quit_screen.png", timeout=0.2, log_search=False):
             log("   [FIX] Stuck on Quit screen. Confirming...")
             pydirectinput.press('enter')
@@ -527,12 +484,12 @@ def confirm_story_mode_spawn() -> bool:
     return False
 
 def ensure_story_mode():
-    """Assure la transition vers le mode Histoire"""
+    """Ensures transition to Story Mode"""
     log("\n--- STATE CHECK: Transitioning to Story Mode ---")
     
-    # Quitter via la roue des personnages
-    # Alt+F5 = Franklin (toujours disponible dès le début)
-    # Alt+F4 = Michael, Alt+F6 = Trevor (débloqué plus tard)
+    # Quit via character wheel
+    # Alt+F5 = Franklin (always available early game)
+    # Alt+F4 = Michael, Alt+F6 = Trevor (unlocked later)
     pydirectinput.keyDown('alt')
     time.sleep(0.1)
     pydirectinput.keyDown('f5')  # Franklin
@@ -541,32 +498,32 @@ def ensure_story_mode():
     time.sleep(0.1)
     pydirectinput.keyUp('alt')
     
-    # Attendre l'écran de confirmation
+    # Wait for confirmation screen
     if find_image("first_letter_of_quit_screen.png", timeout=5, crash_if_missing=True):
         pydirectinput.press('enter')
     
-    # Confirmer le spawn en Story Mode
+    # Confirm spawn in Story Mode
     success = confirm_story_mode_spawn()
     
     if success:
-        # Restaurer la connexion seulement si on est bien en Story Mode
+        # Restore connection only if truly in Story Mode
         FirewallManager.unblock()
     else:
         log_error("[ERROR] Failed to confirm Story Mode spawn - KEEPING FIREWALL BLOCKED!")
-        log_error("[ERROR] Les achats ne seront PAS sauvegardés tant que le firewall bloque.")
+        log_error("[ERROR] Purchases will NOT be saved while firewall blocks.")
         update_stats(errors=1)
 
 def go_story_to_online():
-    """Transition du mode Histoire vers Online"""
+    """Transition from Story Mode to Online"""
     log("\n--- TRANSITION: Story -> Online ---")
     
-    # Ouvrir le menu si nécessaire
+    # Open menu if necessary
     if not find_image("online_button.png", timeout=1.0, log_search=False):
         log("   [NAV] Opening Pause Menu...")
         pydirectinput.press('esc')
         time.sleep(1.0)
     
-    # Cliquer sur Online
+    # Click Online
     if not find_image("online_button.png", timeout=5, click=True, crash_if_missing=True):
         return
     
@@ -578,7 +535,7 @@ def go_story_to_online():
     pydirectinput.press('enter')
     time.sleep(1.0)
     
-    # Sélectionner le type de session
+    # Select session type
     max_retries = 3
     for attempt in range(max_retries):
         if find_image("closed_friend_session.png", timeout=5, click=True):
@@ -597,15 +554,15 @@ def go_story_to_online():
 
     pydirectinput.press('enter')
     
-    # Gérer la confirmation de quitte
+    # Handle quit confirmation
     if find_image("first_letter_of_quit_screen.png", timeout=5, log_search=False):
         pydirectinput.press('enter')
     
-    # Attendre le chargement
+    # Wait for load
     wait_for_online_load()
 
 def wait_for_online_load():
-    """Attend que le joueur soit spawné en ligne"""
+    """Waits for player to spawn online"""
     log("   [WAIT] Waiting for Online Load...")
     
     loading_timeout = time.time() + CONFIG.ONLINE_LOAD_TIMEOUT
@@ -614,7 +571,7 @@ def wait_for_online_load():
     while time.time() < loading_timeout:
         check_panic_key()
         
-        # Détecter l'état actuel
+        # Detect current state
         if find_image("joining_gta_online.png", region_name="BOTTOM_RIGHT", timeout=0.2, log_search=False):
             if last_state != "loading":
                 log_debug("   [STATE] Loading screen detected...")
@@ -637,16 +594,16 @@ def wait_for_online_load():
 # ==================== BROWSER OPERATIONS ====================
 
 def recover_and_reset_filters():
-    """Récupère de l'écran de détails et réinitialise les filtres"""
+    """Recovers from detail screen and resets filters"""
     log("   [RECOVERY] Backing out to list...")
     
-    # Clic droit pour revenir
+    # Right click to go back
     pydirectinput.mouseDown(button='right')
     time.sleep(0.1)
     pydirectinput.mouseUp(button='right')
     time.sleep(1.0)
     
-    # Réinitialiser les filtres
+    # Reset filters
     log("   [RECOVERY] Resetting Filters...")
     find_image("web_dynasty_high_to_low.png", region_name="BROWSER_MAIN", timeout=2, click=True, log_search=False)
     time.sleep(0.2)
@@ -656,21 +613,21 @@ def recover_and_reset_filters():
     update_stats(errors=1)
 
 def close_browser():
-    """Ferme le navigateur in-game"""
+    """Closes in-game browser"""
     log("   [EXIT] Closing browser...")
     
     max_attempts = 15
     for _ in range(max_attempts):
         check_panic_key()
         
-        # Spam clic droit pour fermer
+        # Spam right click to close
         for _ in range(9):
             pydirectinput.mouseDown(button='right')
             time.sleep(0.02)
             pydirectinput.mouseUp(button='right')
             time.sleep(0.03)
         
-        # Vérifier si fermé
+        # Verify if closed
         if find_image("map_north.png", region_name="HUD_AREA", timeout=1.0, log_search=False):
             log("   [SUCCESS] Browser Closed.")
             return True
@@ -679,7 +636,7 @@ def close_browser():
     return False
 
 def buy_single_property(slot_index: int) -> bool:
-    """Achète une seule propriété pour un slot donné"""
+    """Buys a single property for a given slot"""
     log(f"   [SLOT {slot_index + 1}/10]")
     
     max_retries = 3
@@ -687,13 +644,13 @@ def buy_single_property(slot_index: int) -> bool:
     for attempt in range(max_retries):
         check_panic_key()
         
-        # Sélectionner la propriété
+        # Select property
         if not find_image("web_dynasty_car_icon_black.png", region_name="BROWSER_MAIN", timeout=3, click=True):
             log_warning("   [WARN] Car icon not found. Recovering...")
             recover_and_reset_filters()
             continue
         
-        # Chercher le bouton acheter
+        # Search for buy button
         if find_image("web_dynasty_buy_property.png", region_name="BROWSER_MAIN", timeout=4, click=True):
             return True
         else:
@@ -703,25 +660,25 @@ def buy_single_property(slot_index: int) -> bool:
     return False
 
 def complete_trade_in(slot_index: int) -> bool:
-    """Complète l'échange de propriété"""
+    """Completes the property trade-in"""
     
     if not find_image("trade_in_property_menu.png", region_name="ALL", timeout=5, crash_if_missing=True):
         return False
     
-    # Naviguer vers le bon slot
+    # Navigate to correct slot
     if slot_index > 0:
         fast_press('down', count=slot_index)
     
-    # Confirmer deux fois
+    # Double confirm
     pydirectinput.press('enter')
     time.sleep(0.2)
     pydirectinput.press('enter')
     time.sleep(0.5)
     
-    # Retourner à la carte
+    # Return to map
     if find_image("web_dynasty_return_to_map.png", region_name="BROWSER_MAIN", timeout=60, click=True):
         time.sleep(0.2)
-        # Réinitialiser les filtres
+        # Reset filters
         find_image("web_dynasty_high_to_low.png", region_name="BROWSER_MAIN", timeout=3, click=True, wait_after=0.1, log_search=False)
         find_image("web_dynasty_low_to_high.png", region_name="BROWSER_MAIN", timeout=3, click=True, wait_after=0.1, log_search=False)
         return True
@@ -730,12 +687,12 @@ def complete_trade_in(slot_index: int) -> bool:
         return False
 
 def batch_buy_routine():
-    """Routine d'achat en lot de 10 propriétés"""
+    """Batch buying routine for 10 properties"""
     log("\n--- PHASE: Batch Buy (10 Slots) ---")
     
     properties_bought = 0
     
-    # Navigation initiale
+    # Initial navigation
     pydirectinput.press('up')
     time.sleep(0.5)
     pydirectinput.press('down')
@@ -743,45 +700,45 @@ def batch_buy_routine():
     pydirectinput.press('enter')
     time.sleep(1.0)
 
-    # Attendre le navigateur
+    # Wait for browser
     if not find_image("eyefind_logo.png", timeout=5, crash_if_missing=True):
         return
     
     if not find_image("web_browser_input_field.png", region_name="BROWSER_MAIN", timeout=5, click=True, crash_if_missing=True):
         return
     
-    # Attendre que le clavier virtuel GTA apparaisse
+    # Wait for GTA virtual keyboard
     log("[WAIT] Waiting for keyboard to appear...")
     time.sleep(1.5)
     
-    # Taper l'URL
+    # Type URL
     log("[TYPE] Typing Dynasty8 URL...")
     safe_type("www.dynasty8realestate.com")
     
-    # Attendre un peu puis confirmer
+    # Wait a bit then confirm
     time.sleep(0.3)
     pydirectinput.press('enter')
     
-    # Attendre que le clavier se ferme et la page charge
+    # Wait for keyboard close and page load
     log("[WAIT] Waiting for page to load...")
     time.sleep(1.5)
     
-    # Aller aux listings
+    # Go to listings
     if not find_image("web_browser_view_property_listings.png", region_name="BROWSER_MAIN", timeout=10, click=True, wait_after=1.0, crash_if_missing=True):
         return
     
-    # Appliquer le filtre
+    # Apply filter
     if not find_image("web_dynasty_low_to_high.png", region_name="BROWSER_MAIN", timeout=8, click=True):
         log_error("[CRITICAL ERROR] 'Low to High' filter not found.")
         return
     
     time.sleep(0.5)
 
-    # Bloquer la connexion
+    # Block connection
     FirewallManager.block()
     time.sleep(1.0)
     
-    # Acheter les 10 slots
+    # Buy 10 slots
     for current_slot in range(10):
         check_panic_key()
         
@@ -798,10 +755,10 @@ def batch_buy_routine():
     log(f"   [BATCH] Completed: {properties_bought}/10 properties bought")
     update_stats(properties=properties_bought)
     
-    # Fermer le navigateur
+    # Close browser
     close_browser()
     
-    # Retourner en Story Mode
+    # Return to Story Mode
     log("   [EXIT] Transitioning to Story Mode...")
     ensure_story_mode()
 
@@ -809,14 +766,14 @@ def batch_buy_routine():
 # ==================== SAVE LOGIC ====================
 
 def force_save_logic():
-    """Force une sauvegarde via le menu d'interaction"""
+    """Forces a save via Interaction Menu"""
     log("   [SAVE] Forcing Game Save...")
     
-    # Ouvrir le menu d'interaction
+    # Open Interaction Menu
     pydirectinput.press('m')
     time.sleep(0.5)
     
-    # Naviguer dans les menus
+    # Navigate menus
     steps = [
         ("interaction_menu_appearance_entry.png", "Appearance"),
         ("interaction_menu_accessories_entry.png", "Accessories"),
@@ -840,7 +797,7 @@ def force_save_logic():
 # ==================== MAIN EXECUTION ====================
 
 def display_banner():
-    """Affiche la bannière du script"""
+    """Displays script banner"""
     print("\n" + "=" * 50)
     print("       GTA ONLINE APARTMENT GLITCH (V10)")
     print("=" * 50)
@@ -850,7 +807,7 @@ def display_banner():
     print("=" * 50)
 
 def get_user_input() -> Tuple[int, str]:
-    """Récupère les entrées utilisateur"""
+    """Gets user inputs"""
     try:
         total_loops = int(input("\nNumber of loops to run: "))
     except ValueError:
@@ -865,17 +822,17 @@ def get_user_input() -> Tuple[int, str]:
     return total_loops, start_choice
 
 def run_main_loop(total_loops: int, start_online: bool):
-    """Boucle principale d'exécution"""
+    """Main execution loop"""
     start_time = time.time()
     STATS["session_start"] = datetime.now().isoformat()
     
-    # Skip la première transition si déjà online
+    # Skip first transition if already online
     if start_online:
         log("[START] Skipping first transition (Already Online).")
     else:
         go_story_to_online()
     
-    # Boucle principale
+    # Main loop
     for i in range(total_loops):
         check_panic_key()
         
@@ -900,11 +857,11 @@ def run_main_loop(total_loops: int, start_online: bool):
         except Exception as e:
             log_error(f"[ERROR] Loop {i + 1} failed: {e}")
             update_stats(errors=1)
-            # Tenter de récupérer
+            # Attempt recovery
             FirewallManager.unblock()
             time.sleep(2)
     
-    # Résumé final
+    # Final summary
     total_time = time.time() - start_time
     log("\n" + "=" * 50)
     log("               SESSION COMPLETE")
@@ -917,10 +874,10 @@ def run_main_loop(total_loops: int, start_online: bool):
 
 
 def main():
-    """Point d'entrée principal"""
+    """Main entry point"""
     setup_logging()
     
-    # Initialisation
+    # Initialization
     FirewallManager.unblock()
     load_stats()
     
