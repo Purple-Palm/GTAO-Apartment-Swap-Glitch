@@ -55,7 +55,7 @@ def download_file(url, filename):
 def extract_assets():
     print("   [INSTALL] Extracting assets...")
     try:
-        # Safety: Remove old assets to prevent conflicts
+        # Remove old assets to prevent conflicts
         if os.path.exists(LOCAL_ASSETS_DIR):
             shutil.rmtree(LOCAL_ASSETS_DIR)
         
@@ -88,7 +88,7 @@ del "%~f0"
     with open("_updater.bat", "w") as f:
         f.write(updater_script)
     
-    # Launch the updater and exit this python process immediately
+    # Launch the updater and exit this python process
     subprocess.Popen(["_updater.bat"], shell=True)
     sys.exit()
 
@@ -126,7 +126,7 @@ def check_integrity_and_update():
             # Download to .new to avoid locking issues
             temp_name = f"{filename}.new"
             if download_file(url, temp_name):
-                # If it's main.py, we can just swap it now
+                # If it's main.py, we can just swap it here
                 if filename == "main.py":
                     if os.path.exists("main.py"): os.remove("main.py")
                     os.rename(temp_name, "main.py")
@@ -162,7 +162,7 @@ def animate_bar(current_step, total_steps, package_name):
     current_val = start_percent
     
     while not stop_thread and current_val < end_percent:
-        time.sleep(0.05) # Speed of animation
+        time.sleep(0.01) # Speed of animation
         current_val += 0.5 # Increment
         
         # Draw Bar
@@ -209,7 +209,7 @@ def run_bot():
         return
         
     print("\n" + "="*35)
-    print(f" STARTING GLITCH BOT (v{get_local_version()})")
+    print(f" STARTING GTA ONLINE APARTMENT GLITCH (v{get_local_version()})")
     print("="*35 + "\n")
     time.sleep(1)
     

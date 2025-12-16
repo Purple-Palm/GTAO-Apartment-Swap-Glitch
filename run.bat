@@ -1,13 +1,17 @@
 @echo off
-Title GTA Glitcher Launcher
+Title GTA Glitcher Terminal
+color 0B
 chcp 65001 >nul
 
-:: Check Admin
+:: ============================================
+::  Admin Check
+:: ============================================
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto gotAdmin)
 
 :UACPrompt
-echo Requesting Admin...
+echo.
+echo  [SYSTEM] Requesting Administrator Privileges...
 echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
 set params= %*
 echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
@@ -19,28 +23,59 @@ exit /B
 pushd "%CD%"
 CD /D "%~dp0"
 
-:: Quick Environment Check
+:START_LOOP
+cls
+
+:: ============================================
+::  Silent Environment Check
+:: ============================================
+:: 1. Check Python
 python --version >nul 2>&1
 if %errorlevel% NEQ 0 (
-    echo [ERROR] Python not found!
+    cls
+    echo.
+    echo  [ERROR] Python Not Detected!
+    echo  Please install Python 3.10+ and check "Add to PATH".
     pause
     exit
 )
 
+:: 2. Setup/Activate Venv
 if not exist ".venv" (
-    echo [INIT] Creating Venv...
+    echo.
+    echo  [*] Initializing Python Environment...
     python -m venv .venv
 )
-
 call .venv\Scripts\activate
 
-:: Ensure 'requests' exists for the launcher to work
-pip show requests >nul 2>&1
-if %errorlevel% NEQ 0 pip install requests --quiet
+:: 3. Check Launcher Deps
+python -m pip show requests >nul 2>&1
+if %errorlevel% NEQ 0 (
+    echo  [*] Updating Libraries...
+    python -m pip install requests --quiet
+)
 
-:: Run Launcher
+:: ============================================
+::  Launch
+:: ============================================
 python launcher.py
 
-:: If launcher exits normally, we pause. 
-:: If launcher triggers a restart, it kills this window anyway.
-pause
+:: ============================================
+::  Exit Handling
+:: ============================================
+set EXIT_CODE=%errorlevel%
+
+:: Code 100 = Auto-Restart
+if %EXIT_CODE% EQU 100 (
+    goto START_LOOP
+)
+
+:: Code 1 = Crash/Error
+if %EXIT_CODE% NEQ 0 (
+    echo.
+    echo  [SYSTEM] Process terminated with error code %EXIT_CODE%.
+    pause
+)
+
+:: Code 0 = Normal Exit
+exit

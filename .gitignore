@@ -210,3 +210,6 @@ __marimo__/
 debug.py
 all_project_files.txt
 assets/
+debug_errors/
+gta_debug.log
+stats.json
