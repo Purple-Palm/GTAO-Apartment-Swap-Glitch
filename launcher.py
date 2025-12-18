@@ -31,7 +31,7 @@ TEMP_ZIP = "assets_update.zip"
 # Bot Dependencies
 BOT_REQUIREMENTS = [
     "keyboard", "mss", "numpy", "opencv-python", 
-    "pyautogui", "pydirectinput"
+    "pyautogui", "pydirectinput", "pywin32", "PyGetWindow", 
 ]
 
 def get_local_version():

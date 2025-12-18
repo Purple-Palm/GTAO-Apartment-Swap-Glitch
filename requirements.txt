@@ -1,6 +1,8 @@
+opencv-python
+numpy
+PyAutoGUI
+pydirectinput
 keyboard
 mss
-numpy
-opencv-python
-pyautogui
-pydirectinput
+pywin32
+PyGetWindow
